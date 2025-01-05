@@ -1,0 +1,136 @@
+[
+    {
+        "Teams": [
+            "Mohammed Brakat"
+        ],
+        "Topic": "An app designed for Pet-sitting, veterinary care, and pet supplies project name",
+        "ProjectName": "Pet sitting",
+        "Color": "#3762e1",
+        "route": "pet-sitting"
+    },
+    {
+        "Teams": [
+            "Hajar Habri",
+            "Rania Elamri"
+        ],
+        "Topic": "An app to organize home for the elderly",
+        "ProjectName": "ElderyCare",
+        "Color": "#cddac4",
+        "route": "eldery-care"
+    },
+    {
+        "Teams": [
+            " Sarah Madani",
+            "Hiba Karakhi"
+        ],
+        "Topic": "Website for guidance after the baccalaureat",
+        "ProjectName": "Najahi",
+        "Color": "#f7dfad",
+        "route": "najahi"
+    },
+    {
+        "Teams": [
+            "Imane maache",
+            "Fatima Ezzahra Nassibi"
+        ],
+        "Topic": "App designed to help students ",
+        "ProjectName": "StudyBuddy",
+        "Color": "#984872",
+        "route": "study-buddy"
+    },
+    {
+        "Teams": [
+            "Manal Tizgui",
+            "Nouhaila Gaoui",
+            "Marwa Moayid"
+        ],
+        "Topic": "App designed to help every citizen",
+        "ProjectName": "SafeDrive",
+        "Color": "#431fb5",
+        "route": "safe-drive"
+    },
+    {
+        "Teams": [
+            "Adil Hassani",
+            "Anass Marji",
+            "Marhoum Abdelqoudous"
+        ],
+        "Topic": "App designed to help BTS students",
+        "ProjectName": "BTS Accelerator",
+        "Color": "#e0ad25",
+        "route": "bts-accelerator"
+    },
+    {
+        "Teams": [
+            "Doaa Echemchakhi",
+            "Basma Elchafi",
+            "Soukaina Aoudane"
+        ],
+        "Topic": "App designed to help people with their skincare and makeup",
+        "ProjectName": "Your skincare health",
+        "Color": "#30d681",
+        "route": "your-skincare-health"
+    },
+    {
+        "Teams": [
+            "Boutmart Ali",
+            "Moukrim Ayman",
+            "Ayoub Abbad"
+        ],
+        "Topic": "App designed to help people with gorcery shopping ",
+        "ProjectName": "Adae",
+        "Color": "#a518c3",
+        "route": "adae"
+    },
+    {
+        "Teams": [
+            "Kenza Foudali"
+        ],
+        "Topic": "App designed to help people manage their health better ",
+        "ProjectName": "HealthMate",
+        "Color": "#fa5317",
+        "route": "health-mate"
+    },
+    {
+        "Teams": [
+            "Salma Benlabiyad",
+            "Aicha Achkaou"
+        ],
+        "Topic": "App designed to help people with their health checkup",
+        "ProjectName": "MyCheckUp",
+        "Color": "#f03d97",
+        "route": "mycheckup"
+    },
+    {
+        "Teams": [
+            "Fati-ezzahra Enassibi",
+            "Imane Maache"
+        ],
+        "Topic": "App designed to help with researches",
+        "ProjectName": "Sarouti bin idi",
+        "Color": "#085676",
+        "route": "sarouti-bin-idi"
+    },
+    {
+        "Teams": [
+            "Achraf Aberdaq",
+            "Lwalidi Mohammed",
+            "Othmane Bouftas"
+        ],
+        "Topic": "App designed to help local chefs create virtual restaurants ",
+        "ProjectName": "Chef's Table",
+        "Color": "#2b0f54",
+        "route": "chefs-table"
+    },
+    {
+        "Teams": [
+            "Reda Dehbi",
+            "Rassy Wadii",
+            "Ahmed Amine Bouizmno"
+        ],
+        "Topic": "Advanced talent plateform",
+        "ProjectName": "SkillSync",
+        "Color": "#13d1cb",
+        "route": "advanced-talent-plateform"
+    }
+]
