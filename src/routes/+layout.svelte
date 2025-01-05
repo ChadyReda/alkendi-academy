@@ -23,14 +23,14 @@
     <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
         <nav class="grid grid-flow-col gap-4">
           <a href="/about" class="link link-hover">About us</a>
-          <a href="/contact" class="link link-hover">Contact</a>
-          <a href="/" class="link link-hover">Events</a>
-          <a href="/" class="link link-hover">Developer</a>
+          <a href="/" class="link link-hover">Contact</a>
+          <a href="/events" class="link link-hover">Events</a>
+          <a href="https://github.com/ChadyReda" class="link link-hover">Developer</a>
         </nav>
         <nav>
           <div class="grid grid-flow-col gap-4">
             <!-- svelte-ignore a11y_consider_explicit_label -->
-            <a href="x.com">
+            <a href="https://x.com">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -42,7 +42,7 @@
               </svg>
             </a>
             <!-- svelte-ignore a11y_consider_explicit_label -->
-            <a href="youtube.com">
+            <a href="http://youtube.com">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -54,7 +54,7 @@
               </svg>
             </a>
             <!-- svelte-ignore a11y_consider_explicit_label -->
-            <a href="facebook.com">
+            <a href="http://facebook.com">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
