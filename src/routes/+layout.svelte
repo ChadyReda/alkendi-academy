@@ -1,7 +1,9 @@
 <script lang="typescript">
   import "../app.css"
   import {page} from "$app/stores"
+
 </script>
+
 
 <main class="grid grid-rows-[auto-1fr-auto] h-screen">
     <nav class="py-6">
