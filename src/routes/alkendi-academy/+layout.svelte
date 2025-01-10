@@ -15,7 +15,7 @@
             <h1 class="text-center text-5xl font-extrabold py-3">BTS ALKENDI</h1>
           </div>
           <div role="tablist" class="tabs tabs-bordered max-w-[500px] mx-auto">
-            <a href="/" role="tab" class="tab { $page.url.pathname === '/alkendi-academy' ? 'tab-active' : '' }">Home</a>
+            <a href="/alkendi-academy" role="tab" class="tab { $page.url.pathname === '/alkendi-academy' ? 'tab-active' : '' }">Home</a>
             <a href="/alkendi-academy/events" role="tab" class="tab { $page.url.pathname === '/alkendi-academy/events' ? 'tab-active' : '' }">Events</a>
             <a href="/alkendi-academy/about" role="tab" class="tab { $page.url.pathname === '/alkendi-academy/about' ? 'tab-active' : '' }">About</a>
           </div>
