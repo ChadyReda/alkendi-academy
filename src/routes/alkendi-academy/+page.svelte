@@ -1,6 +1,6 @@
 <div
   class="hero min-h-screen"
-  style="background-image: url(/hero-image.jpg);">
+  style="background-image: url(/images/hero-image.jpg);">
   <div class="hero-overlay bg-opacity-90"></div>
   <div class="hero-content text-neutral-content text-center">
     <div class="max-w-mx">
