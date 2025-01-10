@@ -7,6 +7,9 @@ const config = {
 	kit: {
 		adapter: adapter(),
 	},
+	paths: {
+		base: '/alkendi-academy', // Set your GitHub Pages base path here
+	},
 };
 
 export default config;
