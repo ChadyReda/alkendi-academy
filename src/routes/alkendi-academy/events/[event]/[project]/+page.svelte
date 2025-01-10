@@ -1,9 +1,8 @@
 <script>
   // @ts-nocheck
-  import tableData from "../../../../data/business-event-teams.json"
+  import tableData from "../../../../../data/business-event-teams.json"
   import {page} from "$app/stores"
   const matchedData = tableData.find(item => item.route === $page.params.project);
-
 </script>
 
 <main class="h-screen px-8">

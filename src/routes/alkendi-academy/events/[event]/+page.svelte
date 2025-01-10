@@ -1,6 +1,6 @@
 <script>
   
-  import tableData from "../../../data/business-event-teams.json"
+  import tableData from "../../../../data/business-event-teams.json"
   import {page} from "$app/stores"
 
 </script>
@@ -26,7 +26,7 @@
               {Topic}
             </td>
             <td class="border border-gray-300 px-6 py-4" style="color: {Color}">
-                <a class="link" href={"/alkendi-academy/"+ $page.params.event + "/" +route}>{ProjectName}</a>
+                <a class="link" href={$page.params.event + "/" +route}>{ProjectName}</a>
             </td>
           </tr>
         {/each}
