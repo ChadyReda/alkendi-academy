@@ -7,7 +7,7 @@
     export let route;
 </script>
 
-<a href={`/events/`+route} class="card bg-base-100 max-w-96 min-w-[340px] shadow-xl">
+<a href={`/events/`+route} class="event-card card bg-base-100 max-w-96 min-w-[340px] shadow-xl">
     <figure>
       <img
         src={image}
@@ -21,8 +21,18 @@
       <p>{description}</p>
       <div class="card-actions justify-end">
         {#each badges as badge}
-          <div class={`badge badge-outline text-${badge.color}-500`}>{badge.name}</div>
+          <div class={`badge-class badge border-${badge.color} text-${badge.color}-500`}>{badge.name}</div>
         {/each}
       </div>
     </div>
 </a>
+
+<style>
+  .event-card{
+    border: 1px solid rgba(200, 200, 200, 0.2);
+  }
+  .badge-class{
+    padding: 5px 10px;
+    text-decoration: underline;
+  }
+</style>

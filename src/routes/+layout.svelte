@@ -1,4 +1,5 @@
 <script lang="typescript">
+
   import "../app.css"
   import {page} from "$app/stores"
 
@@ -16,17 +17,17 @@
           <h1 class="text-center text-5xl font-extrabold py-3">BTS ALKENDI</h1>
         </div>
         <div role="tablist" class="tabs tabs-bordered max-w-[500px] mx-auto">
-          <a href="/" role="tab" class="tab { $page.url.pathname === '/' ? 'tab-active' : '' }">Home</a>
-          <a href="/events" role="tab" class="tab { $page.url.pathname === '/events' ? 'tab-active' : '' }">Events</a>
-          <a href="/about" role="tab" class="tab { $page.url.pathname === '/about' ? 'tab-active' : '' }">About</a>
+          <a href="alkendi-academy/" role="tab" class="tab { $page.url.pathname === '/' ? 'tab-active' : '' }">Home</a>
+          <a href="alkendi-academy/events" role="tab" class="tab { $page.url.pathname === '/events' ? 'tab-active' : '' }">Events</a>
+          <a href="alkendi-academy/about" role="tab" class="tab { $page.url.pathname === '/about' ? 'tab-active' : '' }">About</a>
         </div>
     </nav>
     <slot></slot>
     <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
         <nav class="grid grid-flow-col gap-4">
-          <a href="/about" class="link link-hover">About us</a>
-          <a href="/" class="link link-hover">Contact</a>
-          <a href="/events" class="link link-hover">Events</a>
+          <a href="alkendi-academy/about" class="link link-hover">About us</a>
+          <a href="alkendi-academy/" class="link link-hover">Contact</a>
+          <a href="alkendi-academy/events" class="link link-hover">Events</a>
           <a href="https://github.com/ChadyReda" class="link link-hover">Developer</a>
         </nav>
         <nav>

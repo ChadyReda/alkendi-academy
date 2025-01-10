@@ -1,16 +1,16 @@
 <script>
-// @ts-nocheck
-
+  // @ts-nocheck
   import tableData from "../../../../data/business-event-teams.json"
   import {page} from "$app/stores"
   const matchedData = tableData.find(item => item.route === $page.params.project);
+
 </script>
 
 <main class="h-screen px-8">
     <div class="breadcrumbs text-sm">
       <ul>
         <li>
-          <a href={"/events/" + $page.params.event} class="btn btn-sm">back to list</a>
+          <a href={"/alkendi-academy/events/" + $page.params.event} class="btn btn-sm">back to list</a>
         </li>
         <li>Project</li>
       </ul>
