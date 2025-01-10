@@ -24,7 +24,7 @@
       <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
           <nav class="grid grid-flow-col gap-4">
             <a href="/alkendi-academy/about" class="link link-hover">About us</a>
-            <a href="/" class="link link-hover">Contact</a>
+            <a href="/alkendi-academy" class="link link-hover">Contact</a>
             <a href="/alkendi-academy/events" class="link link-hover">Events</a>
             <a href="https://github.com/ChadyReda" class="link link-hover">Developer</a>
           </nav>

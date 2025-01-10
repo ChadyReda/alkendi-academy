@@ -8,7 +8,7 @@
       <p class="mb-5 text-3xl text-white py-6">
         Whether you want to make small improvements to your lifestyle or treat yourself to some useful knowledge, the BTS community can help you start something new this year.
       </p>
-      <a href="/events" class="btn btn-primary">Discover our Events</a>
+      <a href="/alkendi-academy/events" class="btn btn-primary">Discover our Events</a>
     </div>
   </div>
 </div>
