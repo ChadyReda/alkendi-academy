@@ -1,6 +1,6 @@
 <script>
     
-    import events from "../../../data/events.json"
+    import events from "../../data/events.json"
     import EventCard from "$lib/components/event.svelte"
 
 </script>

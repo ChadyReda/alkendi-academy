@@ -1,6 +1,6 @@
 <script>
   
-  import tableData from "../../../../data/business-event-teams.json"
+  import tableData from "../../../data/business-event-teams.json"
   import {page} from "$app/stores"
 
 </script>
