@@ -23,7 +23,7 @@
   <div>
     <h1 class="text-4xl font-bold py-4">{matchedData?.ProjectName}</h1>
     {#each matchedData.Teams as team_member}
-      <div class="btn btn-active mr-2">{team_member}</div>
+      <div class="btn btn-active mr-2 my-1">{team_member}</div>
     {/each}
     <p class="text-lg py-3">{matchedData.Topic}</p>
   </div>

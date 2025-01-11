@@ -8,8 +8,7 @@
   import { base } from "$app/paths";
 </script>
 
-<a href={`${base}/events/${route}`}  class="event-card card bg-base-100 max-w-96 min-w-[340px] shadow-xl">
-
+<a href={`${base}/events/${route}`}  class="event-card card bg-base-100 max-w-96 min-w-[280px] shadow-xl">
     <figure>
       <img
         src="{base}{image}"
