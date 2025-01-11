@@ -9,10 +9,10 @@
 </script>
 
 <a href={`${base}/events/${route}`}  class="event-card card bg-base-100 max-w-96 min-w-[340px] shadow-xl">
-  
+
     <figure>
       <img
-        src={`${base}${image}`}
+        src={`${image}`}
         alt="Shoes" />
     </figure>
     <div class="card-body p-6">
