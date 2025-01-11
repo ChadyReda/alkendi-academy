@@ -5,12 +5,13 @@
   export let badges;
   export let image;
   export let route;
+  import { base } from "$app/paths";
 </script>
 
 <a href={`events/`+route} class="event-card card bg-base-100 max-w-96 min-w-[340px] shadow-xl">
     <figure>
       <img
-        src={image}
+        src={base + image}
         alt="Shoes" />
     </figure>
     <div class="card-body p-6">
