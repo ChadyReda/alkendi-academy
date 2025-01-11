@@ -12,7 +12,7 @@
 
     <figure>
       <img
-        src={`${image}`}
+        src="{base}{image}"
         alt="Shoes" />
     </figure>
     <div class="card-body p-6">
