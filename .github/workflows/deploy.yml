@@ -52,7 +52,17 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     
-    steps:
+  steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
+  steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages  # IMPORTANT: Ensure it matches the uploaded artifact
+          path: build/
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v1
