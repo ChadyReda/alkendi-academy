@@ -9,7 +9,7 @@ const config = {
 		adapter: adapter(),
 		paths: {relative: false},
 		paths: {
-			base: "/"
+			base: "/alkendi-academy"
 		},
 		prerender: {
 			handleHttpError: ({ status, path, referrer, referenceType }) => {
