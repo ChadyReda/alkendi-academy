@@ -8,7 +8,7 @@ jobs:
   build_site:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
       - name: Install Node.js
@@ -17,21 +17,33 @@ jobs:
           node-version: 18
           cache: npm
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
 
-      - name: Build
+      - name: Build Site
         env:
           BASE_PATH: '/'
         run: |
           npm run build
           touch build/.nojekyll
 
+      # Debugging: Check if the build folder exists and list its contents
+      - name: Debug: List Build Files
+        run: |
+          echo "Checking build directory..."
+          ls -la build
+          echo "Checking root directory..."
+          ls -la
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: github-pages  # Ensure this matches the download step
-          path: 'build/'
+          name: github-pages  # This name must match in the download step
+          path: build/
+      
+      # Debugging: Confirm artifact upload was successful
+      - name: Debug: Confirm Artifact Upload
+        run: echo "Artifact 'github-pages' should be uploaded successfully!"
 
   deploy:
     needs: build_site
@@ -46,11 +58,19 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
+      # Debugging: List all available artifacts before downloading
+      - name: Debug: List Available Artifacts
+        run: ls -la
+
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
           name: github-pages  # Ensure this matches the uploaded artifact
           path: build/
+
+      # Debugging: Check if build folder is present after download
+      - name: Debug: List Build Folder After Download
+        run: ls -la build
 
       - name: Deploy
         id: deployment
