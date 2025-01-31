@@ -38,7 +38,7 @@ jobs:
         with:
           name: github-pages
           # this should match the `pages` option in your adapter-static options
-          path: 'build/alkendi-academy/'
+          path: 'build/'
       
   deploy:
     needs: build_site
@@ -57,7 +57,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: github-pages  # Ensure this matches the uploaded artifact
-          path: build/
+          path: build/alkendi-academy/
 
       - name: Deploy
         id: deployment
