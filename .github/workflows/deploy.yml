@@ -11,12 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
-      # - name: Install pnpm
-      #   uses: pnpm/action-setup@v2
-      #   with:
-      #     version: 8
-
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
@@ -26,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: build
+      - name: Build
         env:
           BASE_PATH: '/'
         run: |
@@ -34,10 +28,10 @@ jobs:
           touch build/.nojekyll
 
       - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
-          # this should match the `pages` option in your adapter-static options
-          path: 'build/'
+          name: github-pages  # Define a name for the artifact
+          path: build/         # Ensure this matches your build output folder
 
   deploy:
     needs: build_site
@@ -50,8 +44,14 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
+
     steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages   # Match the artifact name from the upload step
+          path: build          # Ensure it's downloaded to the correct folder
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v1
