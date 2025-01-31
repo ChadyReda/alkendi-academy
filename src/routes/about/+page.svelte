@@ -1,4 +1,4 @@
-<main class="p-6">
+<main class="p-6n">
     <section class="py-12 px-6 max-w-4xl mx-auto">
         <!-- Title -->
         <h1 class="text-4xl font-bold text-center text-indigo-600 mb-6">About BTS AlKendi</h1>
