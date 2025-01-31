@@ -27,23 +27,14 @@ jobs:
           npm run build
           touch build/.nojekyll
 
-      # Debugging: Check if the build folder exists and list its contents
       - name: Debug: List Build Files
-        run: |
-          echo "Checking build directory..."
-          ls -la build
-          echo "Checking root directory..."
-          ls -la
+        run: ls -la build  # Debugging step to confirm build output
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: github-pages  # This name must match in the download step
-          path: build/
-      
-      # Debugging: Confirm artifact upload was successful
-      - name: Debug: Confirm Artifact Upload
-        run: echo "Artifact 'github-pages' should be uploaded successfully!"
+          name: github-pages  # Ensure this matches the download step
+          path: 'build/'
 
   deploy:
     needs: build_site
@@ -58,7 +49,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
-      # Debugging: List all available artifacts before downloading
       - name: Debug: List Available Artifacts
         run: ls -la
 
@@ -67,10 +57,6 @@ jobs:
         with:
           name: github-pages  # Ensure this matches the uploaded artifact
           path: build/
-
-      # Debugging: Check if build folder is present after download
-      - name: Debug: List Build Folder After Download
-        run: ls -la build
 
       - name: Deploy
         id: deployment
