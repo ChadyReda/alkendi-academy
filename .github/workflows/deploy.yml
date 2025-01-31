@@ -34,8 +34,9 @@ jobs:
           touch build/.nojekyll
 
       - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
+          name: github-pages
           # this should match the `pages` option in your adapter-static options
           path: 'build/'
       
