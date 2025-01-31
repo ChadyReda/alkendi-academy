@@ -26,20 +26,22 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: build
+      - name: Build
         env:
           BASE_PATH: '/'
         run: |
           npm run build
           touch build/.nojekyll
 
+      - name: List Build Directory
+        run: ls -al build/  # To ensure the build directory is created and populated
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          # this should match the `pages` option in your adapter-static options
           path: 'build/'
-      
+
   deploy:
     needs: build_site
     runs-on: ubuntu-latest
@@ -51,8 +53,11 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
+
     steps:
+      - name: Wait for artifact to be available
+        run: sleep 10  # Adding a delay to ensure the artifact is ready before downloading
+
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
